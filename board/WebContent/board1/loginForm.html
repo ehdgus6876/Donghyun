@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Login PHP</title>
+	<link rel="stylesheet" href="style.css" />
+	<link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+
+</head> <!-- 로그인화면 -->
+<body>
+	<div class="lg-container">
+		<h1>Login</h1>
+		<form action="memberControl.jsp" id="lg-form" name="lg-form" method="post"> <!-- 로그인한 정보를  memberControl.jsp로 파라미터를 넘김-->
+		<input type=hidden name="action" value="login">
+			
+			<div>
+				<label for="userid">UserID:</label>
+				<input type="text" name="userid" id="userid" placeholder="userid"/>
+			</div>
+			
+			<div>
+				<label for="passwd">Password:</label>
+				<input type="password" name="passwd" id="passwd" placeholder="passwd" />
+			</div>
+			
+			<div>				
+				<button type="submit" id="login">Login</button>
+				<button type="reset" id="back" onclick="location.href='firstscreen.html' ">Back</button>
+			</div>
+			
+		</form>
+		<div id="message"></div>
+	</div>
+</body>
+</html>

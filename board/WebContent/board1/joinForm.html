@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Join up</title>
+	<link rel="stylesheet" href="style.css" />
+	<link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+
+</head> <!-- 회원가입화면 -->
+
+<body>
+	<div class="lg-container">
+		<h1>Join Up</h1>
+		<form action="memberControl.jsp" id="lg-form" name="lg-form" method="post"> <!-- 회원정보를입력받아 memberControl.jsp로 파라미터를 넘겨줌 -->
+		<input type=hidden name="action" value="join"> <!-- controller가 쓰기위한 action값을 hidden타입으로 넘겨줌 -->
+			
+			<div>
+				<label for="userId">UserID:</label>
+				<input type="text" name="userid" id="userid" placeholder="userid"/>
+			</div>
+			
+			<div>
+				<label for="passWord">Password:</label>
+				<input type="text" name="passwd" id="passwd" placeholder="passwd" />
+			</div>
+
+			<div>
+				<label for="tel">Tel:</label>
+				<input type="text" name="tel" id="tel" placeholder="tel" />
+			</div>
+			
+			<div>
+				<label for="email">Email:</label>
+				<input type="text" name="email" id="email" placeholder="email" />
+			</div>
+		
+			<div>				
+				<button type="submit" id="joinUp">JoinUp</button>
+				<button type="reset" id="back" onclick="location.href='firstscreen.html' ">Back</button>
+			</div>
+			
+		</form>
+		<div id="message"></div>
+	</div>
+</body>
+</html>
